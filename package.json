@@ -1,0 +1,19 @@
+{
+  "name": "posh-ui",
+  "version": "1.0.0",
+  "description": "Test App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devinder1987/xebia-test.git"
+  },
+  "author": "Devinder <d.shutwal@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devinder1987/xebia-test/issues"
+  },
+  "homepage": "https://github.com/Devinder1987/xebia-test#readme"
+}

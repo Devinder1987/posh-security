@@ -127,7 +127,7 @@ h1 {
     position: fixed;
     right: 0;
     left: 0;
-    width: 84%;
+    width: 1170px;
     margin: 0 auto;
 }
 .score-val {
@@ -146,10 +146,10 @@ h1 {
     height: 91%;
 }
 .videoWrapper{
-    width: 81%;
+    width: 90%;
     box-shadow: 1px 2px 3px 2px #ddd;
     border-radius: 5px;
-    height: 360px;
+    height: 550px;
     margin: 0 auto;
 }
 .readPDF{
@@ -160,17 +160,36 @@ h1 {
     background-color: white;
     color: #23527c;
 }
-#startQuiz{
-    background-color: #00a65a;
-    border-color: #008d4c;
-    border-radius: 20px;
-    padding: 10px 20px;
+.startQuiz{
+    background-color: #1E8B7E;
+    border-color: #1E8B7E;
+    border-radius: 5px;
+    padding: 6px 20px;
     font-size: 20px;
+    color: white;
+    font-size: larger;
 }
-#startQuiz:hover{
-    color: #fff;
-    background-color: #449d44;
-    border-color: #398439;
+.cancelQuiz{
+    background-color: white;
+    color: grey;
+    border: 2px solid #1E8B7E;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 20px;
+    font-size: larger;
+}
+.cancelQuiz:hover{
+    background: #e6e5e6;
+    color: black;
+}
+.startQuiz:hover{
+    background-color: #2abbaa;
+    border-color: #2abbaa;
+    border-radius: 5px;
+    padding: 6px 20px;
+    font-size: 20px;
+    color: white;
+    font-size: larger;
 }
 /*quiz page*/
 .quiz-area{
@@ -195,19 +214,26 @@ h1 {
 }
 #options label{
     font-weight: 100;
+    font-size: small;
 }   
 .nextButton{
     text-align: right;
+    background: #1E8B7E;
+    border-radius: 5px;
+    color: white !important;
+}
+.nextButton:hover{
+    background-color: #2abbaa;
+    color: white !important;
+    border-radius: 5px;
 }
 .scoreArea{
     padding: 15px;
     box-shadow: 1px 2px 3px 2px #ddd;
     text-align: center;
 }
-.backToHome:hover{
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 20px;
+.center-text{
+    text-align: center;
 }
 .mainAreaAdmin{
     margin-top: 20px;
@@ -221,20 +247,41 @@ h1 {
     width: 360px;
     margin-left: 30%;
 }
+.overAllPopUp-container{
+    content: '';
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background: #0000006e;
+
+}
 .overAllPopUp{
     width: 34%;
-    position: absolute;
+    position: relative;
     top: 225px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    background-color: #680d61;
-    color: white;
+    background-color: #ffffff;
+    color: black;
     margin: 0 auto;
     font-family: sans-serif;
-    border-radius: 23px;
+    border-radius: 5px;
     font-weight: 400;
-    margin-left: 25%;
+    z-index: 10000;
+    width: 450px;
+}
+.popup-footer{
+    padding-top: 20px;
+    height: 60px;
+}
+.popup-footer .startQuiz{
+    float: left;
+}
+.popup-footer .cancelQuiz{
+    float: right;
 }
 .popUpButton{
 font-size: 14px !important;
@@ -250,4 +297,21 @@ video::-webkit-media-controls-enclosure {
 }
 video::-webkit-media-controls-panel {
      width: calc(100% + 30px); /* Adjust as needed */
+}
+.cource-doc-container{
+    position: relative;
+    height: 50px;
+    padding: 10px 0px 10px 0;
+    font-size: large;
+}
+.cource{
+    display: inline;
+    float: left;
+}
+.policy-doc{
+    display: inline;
+    float: right;
+}
+.large-text{
+    font-size: large;
 }

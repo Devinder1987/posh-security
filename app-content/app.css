@@ -19,11 +19,13 @@ background-color: #fafafa;
 
 .login{
     width: 100% !important;
-    border-radius: 20px !important;
-    padding: 10px 20px !important;
+    background-color: #1E8B7E;
+    border-color: #1E8B7E;
+    border-radius: 5px !important;
+    padding: 6px 20px !important;
     font-size: 20px !important;
-    background-color: #00a65a !important;
-    border-color: #008d4c !important; 
+    color: white;
+    font-size: larger;
 } 
 
 .content {
@@ -89,8 +91,7 @@ background-color: #fafafa;
 }
 
 .question{
-	color: #2980b9;
-    font-size: 24px;
+    font-size: large;
     font-family: helvetica;
 }
 
@@ -117,4 +118,8 @@ background-color: #fafafa;
 }
 .scoreFinal {
     font-weight: bold;
+}
+.table>thead>tr.info>th{
+    background: #6c1f5e !important;
+    color: white !important;
 }

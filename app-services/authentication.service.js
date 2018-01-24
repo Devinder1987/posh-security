@@ -16,7 +16,7 @@
         return service;
 
         function Login(username, password, callback) {
-        	var baseUrl = Configuration.getBaseUrl();
+        	var baseUrl =  Configuration.getBaseUrl();
             $http.post(baseUrl+'auth', { username: username, password: password })
                 .success(function (response) {
 					service.Logout;

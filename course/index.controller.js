@@ -19,6 +19,10 @@
                        
                     }
             });
+            // $scope.courses = [
+            //     {"id":1,"name":"POSH","description":"Prevention of Sexual Harassment","score":8,"scoreInPercent":80.0,"maxScore":10,"result":"FAILED","attemptCount":3,"maxAttempt":3},
+            //     {"id":2,"name":"Security","description":"This is the security test","score":9,"scoreInPercent":0.0,"maxScore":10,"result":"NOT STARTED","attemptCount":0,"maxAttempt":4}
+            //     ]
         }
 		
 		$scope.questions = function questions(course,empId) {
