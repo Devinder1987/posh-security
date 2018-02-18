@@ -14,6 +14,8 @@
 			ScorecardService.getScorecard($scope.attemptId, function (response) {	
 				$scope.scorecardResult = response.data;
 			});
+            var data = $localStorage.selectedCource;
+            $scope.pdfLink = "./static/pdf/" + data.course.name + ".pdf";
         }
         
         $scope.showHome = function() {

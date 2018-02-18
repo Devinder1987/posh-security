@@ -22,8 +22,12 @@
             AuthenticationService.Login(vm.username, vm.password, function (result) {
                 if (result === true) {
 					$rootScope.showLogin = true;
-                    $location.path('/');
-
+                    $location.path('admin');
+                    if(result.user==='admin'){
+                        $location.path('/admin');
+                    }else{
+                        $location.path('/');
+                    }
                 } else {
                 	vm.error = 'Username or password is incorrect';
                 	if(result === null || result === 'null' || result === undefined){

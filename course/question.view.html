@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div ng-show="quizstarted">
-                <div class="timer">Remaining Time: <span class="timeValue">{{counter}} secs</span></div>
+                <div class="timer">Remaining Time: <span class="timeValue">{{counter}}</span></div>
                 <div class="questionNextSection">
                     <div class="question">
                         <h2 id="question" class="question">{{id+1}}. {{question.desc}}</h2>
@@ -104,11 +104,11 @@
 
         <div class="intro" ng-show="!inProgress" ng-init="showPopUp = false">
             <div class="cource-doc-container">
-                <p class="cource">Courses: <span class="courseName">{{course.name}} - {{course.description}}</span></p>
-                <p class="policy-doc"><a ng-href="{{pdfLink}}" target="_blank">Policy document <i class="fa fa-file-pdf-o" aria-hidden="true" ></i></a></p>
+                <p class="cource"><span class="courseName">{{course.name}} - {{course.description}}</span></p>
+                <p class="policy-doc"><a ng-href="{{pdfLink}}" target="_blank">Click here to download Policy document <i class="fa fa-file-pdf-o" aria-hidden="true" ></i></a></p>
             </div>
             <div class="videoWrapper">
-                <video class="quizVideo" controls>
+                <video class="quizVideo" ng-if="videoLink" controls>
                     <source ng-src="{{videoLink}}" type="video/mp4"> Your browser does not support HTML5 video.
                 </video>
             </div>

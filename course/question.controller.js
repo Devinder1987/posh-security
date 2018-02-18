@@ -13,6 +13,7 @@
 			$location.path('/questions');
 			var data = $localStorage.selectedCource;
 			$scope.course = data.course;
+			$scope.courseName = data.course.name;
 			$scope.videoLink = "./static/videos/" + data.course.name + ".mp4";
 			$scope.pdfLink = "./static/pdf/" + data.course.name + ".pdf";
 			$scope.showTnC = false;
@@ -89,7 +90,7 @@
 
 		var mytimeout;
 		var counter;
-		$scope.counter = Math.floor($scope.timerInSecs / 60) + ' : ' + $scope.timerInSecs % 60;
+		$scope.counter = '20 : 00';
 		$scope.timer = function () {
 			// stops any running interval to avoid two intervals running at the same time
 			$scope.stop(mytimeout);
